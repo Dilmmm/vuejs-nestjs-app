@@ -1,7 +1,9 @@
-
 <template>
+  <v-toolbar>
+    <v-toolbar-title class="text-center">Application</v-toolbar-title>
+  </v-toolbar>
   <v-card
-    class="mx-auto"
+    class="mx-auto mt-4"
     prepend-icon="$vuetify"
     subtitle="The #1 Vue UI Library"
     width="400"
@@ -14,7 +16,12 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem!
     </v-card-text>
   </v-card>
-  <v-btn color="primary">Primary Button</v-btn>
+  <v-row justify="center">
+    <v-col cols="auto">
+      <v-btn class="mt-4" color="primary">Primary Button</v-btn>
+    </v-col>
+  </v-row>
+
 </template>
 
 <script>
@@ -25,18 +32,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
