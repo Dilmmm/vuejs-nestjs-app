@@ -21,7 +21,7 @@ model Utilisateur {
   mot_de_passe     String
   prenom           String
   nom              String
-  date_inscription DateTime
+  date_inscription DateTime @default(now())
   actif            Boolean  @default(false)
 }
 
